@@ -1,0 +1,50 @@
+cat > src/App.tsx << 'EOF'
+import { BrowserRouter } from 'react-router-dom';
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div style={{ minHeight: '100vh', backgroundColor: '#f3f4f6' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem' }}>
+          <div style={{ backgroundColor: '#ffffff', borderRadius: '12px', padding: '2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+            <h1 style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#059669', marginBottom: '1rem' }}>
+              Olorieni Church Management System
+            </h1>
+            <p style={{ color: '#4b5563', marginBottom: '1rem' }}>
+              Welcome to Olorieni Lutheran Church - Arusha, Tanzania
+            </p>
+            
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.5rem', marginTop: '2rem' }}>
+              <div style={{ backgroundColor: '#f9fafb', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>👥</div>
+                <div style={{ fontWeight: 'bold', fontSize: '0.875rem', color: '#6b7280' }}>Total Members</div>
+                <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#1f2937' }}>0</div>
+              </div>
+              
+              <div style={{ backgroundColor: '#f9fafb', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💰</div>
+                <div style={{ fontWeight: 'bold', fontSize: '0.875rem', color: '#6b7280' }}>Today's Offerings</div>
+                <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#1f2937' }}>TSh 0</div>
+              </div>
+              
+              <div style={{ backgroundColor: '#f9fafb', padding: '1.5rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
+                <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>📅</div>
+                <div style={{ fontWeight: 'bold', fontSize: '0.875rem', color: '#6b7280' }}>Upcoming Events</div>
+                <div style={{ fontSize: '1.875rem', fontWeight: 'bold', color: '#1f2937' }}>0</div>
+              </div>
+            </div>
+            
+            <div style={{ marginTop: '2rem', padding: '1rem', backgroundColor: '#f3f4f6', borderRadius: '8px' }}>
+              <p style={{ fontSize: '0.75rem', color: '#6b7280' }}>
+                Developer: Erick Juma | 0741681933 | Arusha, Tanzania
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+EOF
